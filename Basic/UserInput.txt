@@ -1,0 +1,18 @@
+The UserInput.cpp code upon compilation gives no error.
+It will also not goinng to give the expected output.
+It will give something like: 
+```
+May I know your name: Shankar
+Mahy I know your full name: Welcome: Shankar
+Welcome:
+```
+
+Explanation of the issue:
+-------------------------
+The issue in code arises from the way cin and getline handle input.
+When we use cin >> name, it reads input until the first whitespace (space, newline, etc.) and leaves the newline character ('\n') in the input buffer. 
+When getline is called next, it reads this leftover newline character as an empty string.
+
+To fix this, we should ignore the leftover newline character after reading the first input. 
+
+Here is the revised corrected code: CorrectUserInput.cpp
