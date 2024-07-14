@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
     int A[2][3] = {{2,5,9}, {6,9,15}};
-    int B[2][3] = {{4,2,-1}, {5,3,-2}};
+    int B[2][3] = {4,2,-1,5,3,-2};
     int C[2][3];
 
     for(int i=0; i<2; i++){
@@ -19,4 +19,5 @@ int main(){
         }
         cout<<endl;
     }
+    return 0;
 }
