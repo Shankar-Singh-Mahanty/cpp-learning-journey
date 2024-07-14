@@ -13,7 +13,7 @@ int main(){
     cout<<"Enter Key: ";
     cin>>key;
 
-    // logic
+    // Logic
     for(i=0; i<n; i++){
         if(key==A[i]){
             cout<<"Found at: "<<i;
