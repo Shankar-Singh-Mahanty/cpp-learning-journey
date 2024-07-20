@@ -10,6 +10,7 @@ int main(){
     cout<<x<<endl;
 
     cout<<&x<<" == "<<&y<<endl;
+    cout<<x+y<<endl;
     cout<<"Both X and Y are the names of same variable";
 
     return 0;
