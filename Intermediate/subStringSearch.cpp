@@ -20,7 +20,7 @@ int main(){
 
     cout<<strstr(s1,s4)<<endl;
 
-    if(strstr(s1,s5) != NULL){
+    if(strstr(s1,s5) != nullptr){
         cout<<strstr(s1,s5)<<endl;
     } else {
         cout<<"Not Found"<<endl;
