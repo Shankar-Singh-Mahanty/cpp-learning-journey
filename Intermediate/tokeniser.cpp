@@ -7,7 +7,7 @@ int main(){
 
     char *token = strtok(s1, "=;");
     
-    while(token != nullptr){   // can also use nullptr
+    while(token != nullptr){   // can also use NULL
         cout<<token<<endl;
         token = strtok(nullptr, "=;");
     }
