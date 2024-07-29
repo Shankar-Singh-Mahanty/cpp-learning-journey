@@ -9,7 +9,7 @@ int main(){
 
     cout<<str<<endl;
 
-    // Issue of reading using cin doesn't work here 
+    // Issue of reading using cin doesn't appear here 
     string str1, str2;
 
     cout<<"Enter str1: ";
