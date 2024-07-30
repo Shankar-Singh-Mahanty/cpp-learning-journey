@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    string str = "How mAny Words";
+    string str = "How   mAny Words78";
     int vowel = 0, consonant = 0, space = 0;
 
     for(int i=0; str[i] !='\0'; i++){
@@ -11,28 +11,25 @@ int main(){
             str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u') {
             vowel++;
         }
-        else if(str[i] == ' '){
+        else if(str[i] == ' ' && str[i+1] != ' '){  // space must not be followed by another space
             space++;
         }
-        else{
-            consonant++;
+        else if((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a' && str[i <= 'z'])){
+            consonant++;    
+        }
+        else {
+            continue; // skip as not counting for special characters and numbers.
         }
     }
     cout<<"Number of vowels in the string is: "<<vowel<<endl;
     cout<<"Number of consonants in the string is: "<<consonant<<endl;
     cout<<"Number of words in the string is: "<<space + 1<<endl;
 
+    /*
+    While counting for consonants
+    Use extra parenthesis to avoid ambiguity becoz && have higher precedence than ||
+    Also use character literlas instead of their ASCII values
+    */
     return 0;
 
-    /*
-    Refere to stringCountPro.cpp present in Advanced directory to know 
-    how to deal with the following scenarios: 
-    
-    1. if multiple spaces are present in between two words
-    2. if any special characters or number is present
-    first try it by yourself then refer to the solution.
-
-    string str = "How   mAnY wOrds78";
-    
-    */
 }
