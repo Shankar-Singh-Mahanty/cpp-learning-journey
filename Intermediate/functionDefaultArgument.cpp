@@ -12,3 +12,9 @@ int main(){
     cout<<add(2,5,0)<<endl;
     return 0;
 }
+
+/*
+Assigning some default values to an argument is called default argument function
+The benifit of a default argument is you can combine the overloaded functions and
+write them into a single function.
+*/
