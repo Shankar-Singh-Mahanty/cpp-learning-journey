@@ -6,7 +6,7 @@ int & fun(int &x){
 }
 int main(){
     int a = 10;
-    fun(a) = 25;
+    fun(a) = 25;    // we make a function as L value
     cout<<a<<endl;
     
     return 0;
