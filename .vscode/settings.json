@@ -3,6 +3,7 @@
         "*.ejs": "html",
         "ostream": "cpp",
         "iostream": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "random": "cpp"
     }
 }
