@@ -7,10 +7,22 @@ private:
     int breadth;
 public:
     void setLength(int l){
-        length = l;
+        if(l >= 0 ){
+            length = l;
+        }
+        else {
+            cout<<"Length can not be -ve so setting it to zero (default)"<<endl;
+            length = 0; 
+        }
     }
     void setBreadth(int b){
-        breadth = b;
+        if(b >= 0 ){
+            breadth = b;
+        }
+        else {
+            cout<<"Breadth can not be -ve so setting it to zero (default)"<<endl;
+            breadth = 0;
+        }
     }
     int getLength(){
         return length;
@@ -30,12 +42,12 @@ int main(){
     Rectangle r;
 
     r.setLength(10);
-    r.setBreadth(5);
+    r.setBreadth(-5);
 
-    cout<<r.area()<<endl;
-    cout<<r.perimeter()<<endl;
-    cout<<r.getLength()<<endl;
-    cout<<r.getBreadth()<<endl;
+    cout<<"Area is: "<<r.area()<<endl;
+    cout<<"Perimeter is: "<<r.perimeter()<<endl;
+    cout<<"Length is= "<<r.getLength()<<endl;
+    cout<<"Breadth is= "<<r.getBreadth()<<endl;
 
     return 0;
 }
