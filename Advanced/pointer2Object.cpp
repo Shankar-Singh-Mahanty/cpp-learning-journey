@@ -17,6 +17,13 @@ public:
 int main(){
     Rectangle r;
     Rectangle *ptr;
+
+    /*
+    In heap
+    Rectangle *p = new Rectangle();     
+    here bracket is optional.
+    */
+    
     ptr = &r;
     ptr -> length = 15;
     ptr -> breadth = 10;
