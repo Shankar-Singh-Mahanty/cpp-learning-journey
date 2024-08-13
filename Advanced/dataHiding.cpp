@@ -51,3 +51,14 @@ int main(){
 
     return 0;
 }
+
+/*
+Property Function
+--------------------
+Accessor :   getXXXX
+Mutator  :   setXXXX
+
+
+Acessor and Mutator togetherly called as propert function and 
+here the function is both readwritable.
+*/
