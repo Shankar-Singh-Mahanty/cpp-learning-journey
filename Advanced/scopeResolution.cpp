@@ -40,7 +40,7 @@ int main(){
     if(r.isSquare()){
         cout<<"Yes"<<endl;
     }
-    
+
     return 0;
 }
 
