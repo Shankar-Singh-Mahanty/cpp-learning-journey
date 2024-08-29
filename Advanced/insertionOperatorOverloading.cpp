@@ -10,18 +10,19 @@ class Complex {
         real = r;
         img = i;
     }
-    friend ostream & operator<<(ostream &o, Complex &c);
+    friend ostream & operator<<(ostream &out, Complex &c);
 };
 
 int main(){
-    Complex c1(3,7);
+    Complex c1(15,8);
     cout<<c1;
 
     return 0;
 }
 
-ostream & operator<<(ostream &o, Complex &c){
-    o<<c.real<<"+i"<<c.img;
+ostream & operator<<(ostream &out, Complex &c){
+    out<<c.real<<"+i"<<c.img;
+    return out; // return by reference
 }
 
 /*
