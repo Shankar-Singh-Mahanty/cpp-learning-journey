@@ -34,3 +34,13 @@ ostream & operator<<(ostream &os, Rational r){
     os<<r.p<<"/"<<r.q;
     return os;
 }
+
+/*
+in insertion overloading we can also write the signature with no return type
+that is with void and no return statement and it will show no error
+then what's the difference ?
+in main function cout<< we can not use multiple insertion operator
+simply cout<<c3; or else writing more will gives error with void as return type.
+that why we must write the ostream reference return type to let cout behave
+as usal with user defined data types as it behaves with the primitice ones.
+*/
