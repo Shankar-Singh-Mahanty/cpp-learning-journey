@@ -19,7 +19,7 @@ class Complex {
 };
 
 int main(){
-    Complex c1(3,5), c2(7,9), c3;
+    Complex c1(5,3), c2(10,5), c3;
 
     c3 = c1 + c2;
     c3.display();
