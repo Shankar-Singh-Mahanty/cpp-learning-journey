@@ -18,5 +18,7 @@ int main(){
     {
         cout<<"Division by zero "<<e<<"!"<<endl;
     }
+    cout<<"Bye"<<endl;
+    
     return 0;
 }
